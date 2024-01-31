@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    width: 100vw
 }
 
 .card-grid {
@@ -22,7 +22,7 @@
     transition: all 0.1s linear 0.1s;
 }
 
-.container button:hover{
+.container button:hover {
     box-shadow: rgba(100, 100, 111, 0.2);
     transform: scale(1.1);
 }
