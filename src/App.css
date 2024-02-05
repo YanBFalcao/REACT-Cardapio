@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw
+
 }
 
 .card-grid {
@@ -12,12 +13,32 @@
     gap: 16px
 }
 
-.container button {
-    background-color: #0275d8;
+.btnAtualizar {
+    background-color: #04c745;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}
+
+.btnNovo {
+    background-color: #04c745;
     color: white;
     font-weight: bold;
     position: fixed;
     bottom: 16px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}
+
+.btnDeletar {
+    background-color: #04c745;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 145px;
     right: 24px;
     transition: all 0.1s linear 0.1s;
 }
