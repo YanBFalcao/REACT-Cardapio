@@ -1,4 +1,4 @@
-#React + TypeScript + Vite + Node.js
+# React + TypeScript + Vite + Node.js
 
 Este exercício foi criado com orientação de vídeos do YouTube. O mesmo é a aplicação Front-End do exercício do repositório "JAVA-API-REST-Cardapio". Com ela, é possível acessar via, visão cliente, validar operações de requisição de endpoints. 
 
