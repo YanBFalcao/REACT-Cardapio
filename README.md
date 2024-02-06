@@ -3,8 +3,8 @@
 Este exercício foi criado com orientação de vídeos do YouTube. O mesmo é a aplicação Front-End do exercício do repositório "JAVA-API-REST-Cardapio". Com ela, é possível acessar via, visão cliente, validar operações de requisição de endpoints. 
 
 Vídeos:
- - Vídeo 1: https://www.youtube.com/watch?v=lUVureR5GqI&pp=ygUPZmVyIGtpcGVyIHJlYWN0
- - Vídeo 2: https://www.youtube.com/watch?v=WHruc3_2z68&pp=ygUPZmVyIGtpcGVyIHJlYWN0
+ - Vídeo 1: [https://www.youtube.com/watch?v=lUVureR5GqI](https://www.youtube.com/watch?v=lUVureR5GqI)
+ - Vídeo 2: [https://www.youtube.com/watch?v=WHruc3_2z68&pp=ygUPZmVyIGtpcGVyIHJlYWN0](https://www.youtube.com/watch?v=WHruc3_2z68)
 
 O exercício está relacionado as linguagens:
 
