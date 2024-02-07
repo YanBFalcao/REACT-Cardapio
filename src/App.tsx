@@ -5,7 +5,8 @@ import { useFoodData } from './hooks/useFoodData';
 import { CreateModal } from './components/create-modal/create-modal';
 import { UpdateModal } from './components/update-modal/update-modal';
 import { DeleteModal } from './components/delete-modal/delete-modal';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 
@@ -26,6 +27,13 @@ function App() {
     setIsModalDeleteOpen(prev => !prev)
   }
   
+  const showToastMessage = () => {
+    toast.success("Success Notification!"), {
+        
+    };
+
+  };
+
   return (
       <div className="container">
         <h1>Cardápio</h1>
@@ -48,6 +56,8 @@ function App() {
         
         {isModalDeleteOpen && <DeleteModal closeModal={handleOpenModalDelete}/>}
         <button onClick={handleOpenModalDelete} className='btnDeletar'> Deletar Item </button>
+
+        <ToastContainer autoClose={3000}></ToastContainer>
 
       </div>
   )
