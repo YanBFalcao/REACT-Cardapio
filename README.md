@@ -23,6 +23,18 @@ O exercício possui:
 - Importação e instalação de pacotes (serão descritos após) para utilizar métodos para importar dados;
 - Reload instantâneo.
 
+Atualizado em 31/01/2024
+ - Finalizado adição de opção POST para usuário realizar inserção de novos itens no programa.
+
+Atualizado em 04/02/2024
+ - Adicionado e finalizado opções de UPDATE e DELETE para usuário do programa realizar operações com sucesso.
+
+Atualizado em 07/02/2024
+ - Melhorado hooks em situações de aviso/retorno ao usuário do programa com mensagens toasts, apropriadas com o tipo de retorno da requisição. Se igual a 200, retornará um toast informando que houve uma requisição com sucesso, se não, retornará um toast error informando ao usuário para realizar ajuste na operação, em relação aos dados inseridos, atualizados, etc.
+
 Atenciosamente,
 
 Yan B. Falcão
+
+Imagens do programa abaixo:
+
