@@ -32,6 +32,9 @@ Atualizado em 04/02/2024
 Atualizado em 07/02/2024
  - Melhorado hooks em situações de aviso/retorno ao usuário do programa com mensagens toasts, apropriadas com o tipo de retorno da requisição. Se igual a 200, retornará um toast informando que houve uma requisição com sucesso, se não, retornará um toast error informando ao usuário para realizar ajuste na operação, em relação aos dados inseridos, atualizados, etc.
 
+Atualizado em 08/02/2024
+ - Adicionado, para auxílio ao desenvolvedor, resgate de ID do item cadastrado no banco de dados para o Front End.
+
 Atenciosamente,
 
 Yan B. Falcão
