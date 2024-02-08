@@ -41,6 +41,7 @@ function App() {
           {data?.map((foodData, index) => 
             <Card
               key={index} // Adicionando uma chave única para cada item na lista
+              id={foodData.id}
               price={foodData.price}
               title={foodData.title}
               image={foodData.image}
