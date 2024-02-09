@@ -35,10 +35,12 @@ Atualizado em 07/02/2024
 Atualizado em 08/02/2024
  - Adicionado, para auxílio ao desenvolvedor, resgate de ID do item cadastrado no banco de dados para o Front End.
 
+Finalizado em 09/02/2024
+ - Projeto finalizado em 09/02/2024 para inicio de outros projetos.
+
 Atenciosamente,
 
 Yan B. Falcão
 
 Imagens do programa abaixo:
 ![image](https://github.com/YanBFalcao/REACT-Cardapio/assets/56008873/784a739a-7541-4208-85cc-9a527656e851)
-
