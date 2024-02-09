@@ -17,7 +17,7 @@
     background-color: white;
     padding: 24px;
     height: 30%;
-    width: 60%;
+    width: 45%;
     border-radius: 24px;
 
     display: flex;
@@ -28,7 +28,7 @@
 
 .modal-overlay-delete .modal-body-delete h2{
     font-size: 32px;
-    margin-left: 44px;
+    margin-left: 43px;
 }
 
 .modal-overlay-delete .modal-body-delete .input-container{

@@ -1,12 +1,12 @@
-import { useState } from 'react';
 import './App.css'
+import "react-toastify/dist/ReactToastify.css";
+import { useState } from 'react';
 import { Card } from './components/card/card';
 import { useFoodData } from './hooks/useFoodData';
 import { CreateModal } from './components/create-modal/create-modal';
 import { UpdateModal } from './components/update-modal/update-modal';
 import { DeleteModal } from './components/delete-modal/delete-modal';
-import { ToastContainer, toast } from 'react-toastify';
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -26,13 +26,6 @@ function App() {
   const handleOpenModalDelete = () => {
     setIsModalDeleteOpen(prev => !prev)
   }
-  
-  const showToastMessage = () => {
-    toast.success("Success Notification!"), {
-        
-    };
-
-  };
 
   return (
       <div className="container">

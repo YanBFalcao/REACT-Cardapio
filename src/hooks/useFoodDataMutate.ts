@@ -1,8 +1,8 @@
+import "react-toastify/dist/ReactToastify.css";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios";
 import { FoodData } from '../interface/FoodData';
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const API_URL = 'http://localhost:8080';
 
@@ -36,6 +36,5 @@ export function useFoodDataMutate(){
             queryClient.invalidateQueries(['food-data'])
         }
     })
-    
     return mutate;
 }

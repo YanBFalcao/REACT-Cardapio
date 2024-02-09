@@ -1,8 +1,8 @@
+import "./create-modal.css";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react"
 import { useFoodDataMutate } from "../../hooks/useFoodDataMutate";
 import { FoodData } from "../../interface/FoodData";
-import "./create-modal.css";
-import "react-toastify/dist/ReactToastify.css";
 
 interface InputProps {
     label: string,
@@ -28,11 +28,7 @@ export function CreateModal({ closeModal }: ModalProps){
     const[title, setTitle] = useState("");
     const[price, setPrice] = useState(0);
     const[image, setImage] = useState("");
-    const { mutate, isSuccess } = useFoodDataMutate(); // Função que realiza o submit dos dados
-    
-    // useState é um hook do react que faça a manipulação de status, linkado a renderização do react
-    // O acima, retorna um array, onde ele no primeiro valor do array, será onde ele ficará salvo
-    // E no segundo, será a função de atualização.
+    const { mutate, isSuccess } = useFoodDataMutate();
 
     const submit = () => {
         const foodData: FoodData = {
@@ -43,15 +39,10 @@ export function CreateModal({ closeModal }: ModalProps){
         mutate(foodData)
     }
 
-    useEffect(() => { // Hook do react, gerando um efeito colateral, dependendo do array de dependencias
-        if(!isSuccess) {
-            // Não fazer nada
-        }
-        else{
-            return closeModal();
-        }
-
-    }, [isSuccess]) // Toda vez que o array mudar, ele fecha ou executa uma ação
+    useEffect(() => {
+        if(!isSuccess) return
+        closeModal();
+    }, [isSuccess])
 
     return(
         <div className="modal-overlay">

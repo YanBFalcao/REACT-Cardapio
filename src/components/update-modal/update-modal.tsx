@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
 import "./update-modal.css";
+import React, { useEffect, useState } from "react"
 import { FoodDataUpdate } from "../../interface/FoodDataUpdate";
 import { useFoodDataMutateAtualizar } from "../../hooks/useFoodDataMutateAtualizar";
 
@@ -40,11 +40,10 @@ export function UpdateModal( { closeModal }: ModalProps){
         mutate(FoodDataUpdate)
     }
 
-    useEffect(() => { // Hook do react, gerando um efeito colateral, dependendo do array de dependencias
+    useEffect(() => {
         if(!isSuccess) return
         closeModal();
-    }, [isSuccess]) // Toda vez que o array mudar, ele fecha ou executa uma ação
-
+    }, [isSuccess]) 
     return(
         <div className="modal-overlay-update">
             <div className="modal-body-update">

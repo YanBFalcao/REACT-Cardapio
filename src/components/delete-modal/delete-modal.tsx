@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
 import "./delete-modal.css";
+import React, { useEffect, useState } from "react"
 import { FoodDataId } from "../../interface/FoodDataId";
 import { useFoodDataMutateDelete } from "../../hooks/useFoodDataMutateDelete"
 
@@ -23,7 +23,6 @@ const Input = ({label, value, deleteValue}: InputProps) => {
 }
 
 export function DeleteModal({ closeModal }: ModalProps){
-    
     const[id, setId] = useState(0);
     const { mutate, isSuccess } = useFoodDataMutateDelete(); 
     
@@ -34,10 +33,10 @@ export function DeleteModal({ closeModal }: ModalProps){
         mutate(foodDataId)
     }
 
-    useEffect(() => { // Hook do react, gerando um efeito colateral, dependendo do array de dependencias
+    useEffect(() => {
         if(!isSuccess) return
         closeModal();
-    }, [isSuccess]) // Toda vez que o array mudar, ele fecha ou executa uma ação
+    }, [isSuccess])
 
     return(
         <div className="modal-overlay-delete">
